@@ -23,7 +23,7 @@ This repository is a candidate source for user profiles, communities, social int
 - Production deployment: **not verified**
 - Live social network: **not claimed**
 
-The previous README described the project as professional-grade and enterprise-ready without sufficient implementation evidence. This README separates repository presence from production readiness.
+The current package metadata calls the module production-grade, but its build suppresses TypeScript failures and its test/lint commands only print success. Those scripts are not evidence that validation passes. fileciteturn161file0
 
 ## Consolidation approach
 
