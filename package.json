@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "SKYCOIN4444 social and messaging engineering-beta module",
   "main": "dist/index.js",
+  "packageManager": "pnpm@9.15.9",
   "scripts": {
     "build": "tsc --noEmit",
     "test": "rm -rf .test-dist && tsc src/messaging.ts src/messaging.test.ts --target ES2020 --module commonjs --strict --esModuleInterop --skipLibCheck --outDir .test-dist && node .test-dist/messaging.test.js",
