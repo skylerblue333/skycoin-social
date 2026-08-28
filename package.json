@@ -5,9 +5,9 @@
   "main": "dist/index.js",
   "packageManager": "pnpm@9.15.9",
   "scripts": {
-    "build": "tsc src/messaging.ts --noEmit --target ES2020 --module commonjs --strict --esModuleInterop --skipLibCheck",
-    "test": "rm -rf .test-dist && tsc src/messaging.ts src/messaging.test.ts --target ES2020 --module commonjs --strict --esModuleInterop --skipLibCheck --lib ES2020,DOM --outDir .test-dist && node .test-dist/messaging.test.js",
-    "lint": "tsc src/messaging.ts --noEmit --target ES2020 --module commonjs --strict --esModuleInterop --skipLibCheck",
+    "build": "tsc --ignoreConfig src/messaging.ts --noEmit --target ES2020 --module commonjs --strict --esModuleInterop --skipLibCheck",
+    "test": "rm -rf .test-dist && tsc --ignoreConfig src/messaging.ts src/messaging.test.ts --target ES2020 --module commonjs --strict --esModuleInterop --skipLibCheck --lib ES2020,DOM --outDir .test-dist && node .test-dist/messaging.test.js",
+    "lint": "tsc --ignoreConfig src/messaging.ts --noEmit --target ES2020 --module commonjs --strict --esModuleInterop --skipLibCheck",
     "start": "node dist/index.js"
   },
   "keywords": ["skycoin4444", "social", "messaging"],
