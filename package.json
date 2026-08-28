@@ -1,15 +1,15 @@
 {
   "name": "skycoin4444-module",
   "version": "1.0.0",
-  "description": "Production-grade SKYCOIN4444 module",
+  "description": "SKYCOIN4444 social and messaging engineering-beta module",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc || echo 'Build completed'",
-    "test": "echo 'Tests passing'",
-    "lint": "echo 'Linting passed'",
+    "build": "tsc --noEmit",
+    "test": "rm -rf .test-dist && tsc src/messaging.ts src/messaging.test.ts --target ES2020 --module commonjs --strict --esModuleInterop --skipLibCheck --outDir .test-dist && node .test-dist/messaging.test.js",
+    "lint": "tsc --noEmit",
     "start": "node dist/index.js"
   },
-  "keywords": ["skycoin4444", "production"],
+  "keywords": ["skycoin4444", "social", "messaging"],
   "author": "SKYCOIN4444",
   "license": "MIT"
 }
